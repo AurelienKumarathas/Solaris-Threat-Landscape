@@ -38,7 +38,7 @@ Solaris operates three critical healthcare applications: MedTrack Pro, HealthHub
 |----------|-----------------------|----------------------------------------|
 | Overview| Employees or contractors could intentionally or unintentionally expose patient data. An insider could misuse privileged access or make configuration errors that expose data.      | Misconfigurations in cloud services (AWS), such as misconfigured S3 buckets or improper database access permissions, could lead to data leaks.   |                     |
 | Mitigation| Enforce least-privilege access policies, monitor user activities, and implement role-based access control (RBAC).    | Regular audits and automated security checks for cloud configurations. | 
-|
+
 
 ### 3.3 Vulnerabilities
 
@@ -46,7 +46,7 @@ Solaris operates three critical healthcare applications: MedTrack Pro, HealthHub
 |---| ----- | ------|
 |Overview| Unpatched or unknown vulnerabilities in application frameworks (e.g., React.js, Node.js) could be exploited by attackers before a patch is released.|As Solaris applications rely heavily on RESTful APIs to integrate with other systems (e.g., MedTrack Pro with HealthHub Mobile, CareConnect360 with MedTrack Pro), API vulnerabilities could expose sensitive data.|
 | |Implement a vulnerability management program and subscribe to security advisories. | Use strong authentication mechanisms for APIs, encrypt API traffic, and conduct API security testing.
-|
+
 
 ### 3.4 Cloud Infrastructure Threats
 
@@ -56,7 +56,7 @@ Solaris operates three critical healthcare applications: MedTrack Pro, HealthHub
 |-----|---|---|---| 
 |Overview| AWS misconfigurations, such as public exposure of EC2 instances or S3 buckets, could allow unauthorized access to sensitive data. |Attackers could target Solaris’s cloud infrastructure, causing outages and disrupting critical healthcare services.| While AWS provides infrastructure security, Solaris is responsible for securing applications, data, and workloads. Misunderstandings of this model could lead to security gaps.
 |Mitigation| Use AWS’s native security services (e.g., AWS Config, Amazon Inspector) and conduct routine audits.|Implement AWS Shield and CloudFront to protect against DoS attacks.| Ensure thorough understanding of AWS's Shared Responsibility Model and implement robust cloud security controls.
-|
+
 
 
 
@@ -66,7 +66,7 @@ Solaris operates three critical healthcare applications: MedTrack Pro, HealthHub
 |---|---|---|
 Overview|  Ensure thorough understanding of AWS's Shared Responsibility Model and implement robust cloud security controls. | For any patient data from EU citizens, Solaris must comply with GDPR, which imposes strict data privacy and consent requirements.|
 | Mitigation| Ensure data encryption, proper access controls, regular HIPAA audits, and employee training programs. | Ensure that consent mechanisms, data access, and data erasure protocols are in place.
-|
+
 
 
 ## 5. Emerging Threats
@@ -76,7 +76,7 @@ Overview|  Ensure thorough understanding of AWS's Shared Responsibility Model an
 |---|---|----|
 Overview| AI is being used by attackers to create more sophisticated attacks, such as highly targeted phishing campaigns or automated vulnerability exploitation. | With advances in quantum computing, traditional encryption methods may become obsolete, posing a long-term threat to data encryption.
 | Mitigation| Invest in AI-driven defense tools and threat intelligence to detect AI-driven threats.| Explore post-quantum cryptographic solutions and stay updated on encryption advancements.
-|
+
 
 ## 6. Threat Actors
 
