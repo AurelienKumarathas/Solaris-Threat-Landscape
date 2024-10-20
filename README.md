@@ -18,6 +18,7 @@ Solaris operates three critical healthcare applications: MedTrack Pro, HealthHub
 
 
 
+
 ## 3. Key Threat Categories
 
 ### 3.1 External Threats
